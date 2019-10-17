@@ -38,7 +38,7 @@
 
        <LinearLayout
            android:layout_width="match_parent"
-           android:layout_height="100dp"
+           android:layout_height="70dp"
            android:orientation="horizontal"
            android:gravity="center_vertical"
            android:layout_gravity="center_vertical"
@@ -46,8 +46,8 @@
 
            <ImageView
                android:id="@+id/dateIcon"
-               android:layout_width="45dp"
-               android:layout_height="45dp"
+               android:layout_width="35dp"
+               android:layout_height="35dp"
                android:layout_marginRight="4dp"
                android:src="@drawable/ic_date_range"
                />
@@ -63,8 +63,8 @@
 
            <ImageView
                android:id="@+id/timeIcon"
-               android:layout_width="45dp"
-               android:layout_height="45dp"
+               android:layout_width="35dp"
+               android:layout_height="35dp"
                android:layout_marginLeft="7dp"
                android:src="@drawable/ic_schedule"
                />
@@ -80,11 +80,10 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="70dp"
             android:layout_marginVertical="20dp"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:gravity="center_vertical"
-            android:paddingLeft="20dp"
             android:orientation="horizontal"
             >
 
@@ -95,6 +94,7 @@
                 android:layout_marginRight="5dp"
                 android:src="@drawable/ic_emoticon_happy"
                 android:background="@android:color/transparent"
+                android:layout_marginLeft="5dp"
                 />
 
             <ImageButton
@@ -143,6 +143,13 @@
                 android:background="@android:color/transparent"
                 />
 
+            <ImageButton
+                android:id="@+id/coolMood"
+                android:layout_width="52dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_emoticon_cool" />
 
         </LinearLayout>
 
