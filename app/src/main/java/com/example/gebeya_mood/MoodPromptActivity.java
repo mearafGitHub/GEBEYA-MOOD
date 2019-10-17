@@ -33,7 +33,7 @@ public class MoodPromptActivity extends AppCompatActivity {
         happyMood = findViewById(R.id.happyMood);
         sadMood = findViewById(R.id.sadMood);
         mehMood = findViewById(R.id.mehMood);
-        angryMood = findViewById(R.id.angryMood);
+        angryMood = findViewById(R.id.disappointedMood);
         whateverMood = findViewById(R.id.whateverMood);
 
         happyMood.setOnClickListener(v -> Toast.makeText(MoodPromptActivity.this, "Glad you are Happy.", Toast.LENGTH_LONG).show());

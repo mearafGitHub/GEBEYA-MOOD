@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.mood_promt_menu, menu);
-        getMenuInflater().inflate(R.menu.home_menu, menu);
+        getMenuInflater().inflate(R.menu.my_moods_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -27,11 +27,14 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
-            case R.id.homeIcon:
-                Intent intent = new Intent(HomeActivity.this, MoodPromptActivity.class);
-                startActivity(intent);
+            case R.menu.mood_promt_menu:
+                Intent intentPrompt = new Intent(HomeActivity.this, MoodPromptActivity.class);
+                startActivity(intentPrompt);
                 return true;
-
+            case R.menu.my_moods_menu:
+                Intent intentMoods = new Intent(HomeActivity.this, MyMoodsActivity.class);
+                startActivity(intentMoods);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
