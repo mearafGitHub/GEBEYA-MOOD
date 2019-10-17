@@ -7,27 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.gebeya_mood.ui.login.LoginActivity;
+public class LoginActivity extends AppCompatActivity {
 
-public class SignUpActivity extends AppCompatActivity {
-
-
-    private Button signup;
+    private Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_login);
 
-        signup = findViewById(R.id.signUp);
-        signup.setOnClickListener(new View.OnClickListener() {
+        login = findViewById(R.id.login);
+
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MoodPromptActivity.class);
                 startActivity(intent);
             }
         });
     }
-
-
 }

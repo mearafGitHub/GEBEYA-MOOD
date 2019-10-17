@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoodPromptActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/chat_anim"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:lottie_rawRes="@raw/chad_the_chatbot"
+            tools:layout_editor_absoluteX="91dp" />
+
+        <TextView
+            android:id="@+id/promptTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Hi! How are you feeling today?" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+           android:layout_gravity="center_vertical"
+           android:paddingLeft="30sp">
+
+           <ImageView
+               android:id="@+id/dateIcon"
+               android:layout_width="45dp"
+               android:layout_height="45dp"
+               android:layout_marginRight="4dp"
+               android:src="@drawable/ic_launcher_foreground"
+               />
+
+           <TextView
+               android:id="@+id/dateText"
+               android:layout_marginRight="7dp"
+               android:layout_width="100dp"
+               android:layout_height="45dp"
+               android:text="current date"
+               android:textColor="@color/colorAccent"
+               />
+
+           <ImageView
+               android:id="@+id/timeIcon"
+               android:layout_width="45dp"
+               android:layout_height="45dp"
+               android:layout_marginLeft="7dp"
+               android:src="@drawable/ic_launcher_foreground"
+               />
+           <TextView
+               android:id="@+id/timeText"
+               android:layout_marginLeft="4dp"
+               android:layout_width="100dp"
+               android:layout_height="45dp"
+               android:textColor="@color/colorAccent"
+               android:text="Current Time"
+               />
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginVertical="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="17dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/happyMood"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_launcher_foreground"
+                />
+
+            <ImageButton
+                android:id="@+id/sadMood"
+                android:layout_toLeftOf="@id/happyMood"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_marginRight="5dp"
+
+                />
+
+            <ImageButton
+                android:id="@+id/mehMood"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_marginRight="5dp"
+                />
+
+            <ImageButton
+                android:id="@+id/angryMood"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_marginRight="5dp"
+
+                />
+
+            <ImageButton
+                android:id="@+id/whateverMood"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:src="@drawable/ic_launcher_foreground"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
