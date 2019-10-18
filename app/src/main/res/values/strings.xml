@@ -1,16 +1,20 @@
 <resources>
-    <string name="app_name">Gebeya_Mood</string>
+    <string name="app_name">Gebeya Mood</string>
     <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_home">Gebeya Today</string>
+    <string name="title_activity_mood_prompt">Mood</string>
+    <string name="title_activity_my_moods">My Moods Log</string>
+
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sing_up_short">Sign up</string>
+    <string name="action_sing_up_short">Sign Up</string>
     <string name="action_sign_in">Log in</string>
     <string name="prompt_username">Username</string>
     <string name="prompt_confirm_password">Confirm Password</string>
     <string name="prompt_gender">Gender</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_username">Invalid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>

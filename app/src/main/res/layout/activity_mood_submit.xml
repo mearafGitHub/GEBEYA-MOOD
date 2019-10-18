@@ -1,9 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MoodSubmit">
+    tools:context=".MoodSubmit"
+    android:padding="18dp"
+    android:orientation="vertical"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is it?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="21dp"
+            android:layout_marginRight="100dp"/>
+
+
+        <ImageButton
+            android:id="@+id/cancelModalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="60dp"
+            android:foregroundGravity="top|left"
+            android:background="#00000000"
+            android:gravity="top|right"
+
+            android:src="@drawable/ic_highlight_off"
+            />
+    </LinearLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/emojiAnimation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true"
+
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/haha" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Do want to tell us ?"
+        android:id="@+id/modalMoodReason"
+        android:height="54dp"
+        android:layout_marginTop="63dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal|center_vertical"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_gravity="center_horizontal"
+        android:baselineAligned="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/goModalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="18dp"
+            android:background="#00000000"
+            android:text="Go"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/skipModalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="18dp"
+            android:background="#00000000"
+            android:text="Skip"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

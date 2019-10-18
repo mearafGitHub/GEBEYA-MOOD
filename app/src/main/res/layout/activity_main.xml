@@ -19,9 +19,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginBottom="21dp"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/mood_bubble_purple" />
+            app:lottie_rawRes="@raw/chad_the_chatbot" />
     </LinearLayout>
 
 

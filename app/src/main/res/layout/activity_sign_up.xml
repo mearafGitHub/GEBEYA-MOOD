@@ -13,8 +13,6 @@
     tools:context=".SignUpActivity">
 
 
-
-
     <EditText
         android:id="@+id/email"
         android:layout_width="0dp"
@@ -22,15 +20,15 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="24dp"
-
+        android:gravity="center_horizontal"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <EditText
@@ -40,10 +38,11 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="24dp"
-
+        android:gravity="center_horizontal"
         android:hint="@string/prompt_username"
         android:inputType="text"
         android:selectAllOnFocus="true"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/email" />
@@ -55,10 +54,11 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="24dp"
-
+        android:gravity="center_horizontal"
         android:hint="@string/prompt_gender"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,13 +71,14 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
+        android:gravity="center_horizontal"
         android:hint="@string/prompt_password"
-
         android:imeActionLabel="@string/prompt_password"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
         android:textColorHighlight="#FFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gender" />
@@ -89,13 +90,14 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
-
+        android:gravity="center_horizontal"
         android:hint="@string/prompt_confirm_password"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
         android:textColorHighlight="#FFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
@@ -106,11 +108,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginVertical="63dp"
         android:layout_marginEnd="48dp"
-        android:layout_marginBottom="64dp"
         android:background="#FF8C00"
         android:enabled="true"
+        android:gravity="center_horizontal|center_vertical"
         android:text="@string/action_sing_up_short"
         android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
