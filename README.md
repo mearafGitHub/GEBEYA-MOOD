@@ -1,5 +1,7 @@
 "# GEBEYA MOODE APP" 
 
+FULL APP MOVED TO: https://github.com/mearafGitHub/Gebeyamood
+
 DOING:
 
 [X] 1. list cards in recyclre view
