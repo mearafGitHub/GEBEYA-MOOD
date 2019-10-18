@@ -6,7 +6,7 @@
         android:id="@+id/myMoodsIcon"
         android:checkable="true"
         android:enabled="true"
-        android:icon="@drawable/ic_account_circle"
+        android:icon="@drawable/ic_history"
         android:title="Item"
         android:visible="true"
         app:showAsAction="always" />

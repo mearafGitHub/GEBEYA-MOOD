@@ -6,4 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".AdminActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="30sp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/dateIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/ic_date_range"
+            />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_marginRight="7dp"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="current date"
+            android:textColor="@color/colorAccent"
+            />
+
+        <ImageView
+            android:id="@+id/timeIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/ic_schedule"
+            />
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_marginLeft="4dp"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:textColor="@color/colorAccent"
+            android:text="Current Time"
+            />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

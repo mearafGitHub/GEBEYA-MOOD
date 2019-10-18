@@ -27,11 +27,11 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
-            case R.menu.mood_promt_menu:
+            case R.id.moodsPromptIcon:
                 Intent intentPrompt = new Intent(HomeActivity.this, MoodPromptActivity.class);
                 startActivity(intentPrompt);
                 return true;
-            case R.menu.my_moods_menu:
+            case R.id.myMoodsIcon:
                 Intent intentMoods = new Intent(HomeActivity.this, MyMoodsActivity.class);
                 startActivity(intentMoods);
                 return true;

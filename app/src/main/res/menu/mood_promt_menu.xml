@@ -6,7 +6,7 @@
         android:id="@+id/moodsPromptIcon"
         android:checkable="true"
         android:enabled="true"
-        android:icon="@drawable/ic_happy_action"
+        android:icon="@drawable/ic_emoticon_excited"
         android:title="Moods"
         android:visible="true"
         app:showAsAction="always"
